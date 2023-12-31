@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1f3641;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 90vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    width: 50vmin;
+    height: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+}
+.box{
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 1.2vw;
+    border: none;
+    outline: none;
+    font-size: 3.2vw;
+    font-weight: 700;
+    cursor: pointer;
+    color: #ffffff;
+    background: #090b1d;
+    box-shadow: 2px 5px 4px #000,
+    inset 2px 2px 3px #5c5a5a;
+}
+.o{
+    color: orange;
+}
+.x{
+    color: skyblue;
+}
+.new-button{
+    padding-top: 2vw;
+}
+#new-btn{
+    padding: 12px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    background: black;
+    color: red;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#new-btn:hover{
+    background: red;
+    border: 2px solid red;
+    color: #000;
+}
+#msg{
+    color: #fff;
+    padding-top: 1.5vw;
+    font-weight: 600;
+    font-size: 2.3vw;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+@media(max-width : 850px){
+    
+    #new-btn{
+        font-size: 2vw;
+    }
+    .box{
+        font-size: 6vw;
+    }
+    #msg{
+        font-size: 4vw;
+    }
+}
+@media(max-width : 500px){
+    h1{
+        font-size: 8vw;
+    }
+    .box{
+        font-size: 7vw;
+    }
+    #new-btn{
+        font-size: 3.5vw;
+    }
+    #msg{
+        font-size: 6vw;
+    }
+    .new-button{
+        padding-top: 4vw;
+    }
+}
